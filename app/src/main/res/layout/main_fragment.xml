@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:orientation="vertical"
+                android:id="@+id/frag_map_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="map-zone"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10pt" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF018786"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="schedule zone"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/frag_cur_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="현재 시간"
+                    android:textSize="15dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                    />
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:text="장 소"
+                        android:gravity="center"
+                        android:textColor="#000000"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="이전 일정"
+                        android:gravity="center"
+                        android:textColor="#000000"/>
+                    />
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:text=" "
+                        android:gravity="center"
+                        android:textColor="#000000"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFFFF">
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="현재 일정"
+                        android:gravity="center"
+                        android:textColor="#000000"/>
+                        />
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:text=" "
+                        android:gravity="center"
+                        android:textColor="#000000"/>
+
+                </TableRow>
+
+                <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFFFF">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="다음 일정"
+                    android:gravity="center"
+                    android:textColor="#000000"/>
+                />
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:text=" "
+                    android:gravity="center"
+                    android:textColor="#000000"/>
+
+            </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
