@@ -73,7 +73,7 @@
 
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
 
@@ -83,89 +83,157 @@
                     android:background="#FFFFFFFF">
 
                     <TextView
-                        android:layout_height="match_parent"
                         android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text=""
-                    />
+                        android:text="" />
+
                     <TextView
-                        android:layout_height="match_parent"
                         android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="할 일"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
                         android:text="장 소"
-                        android:gravity="center"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000" />
 
                 </TableRow>
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#FFFFFFFF">
 
                     <TextView
-                        android:layout_height="match_parent"
                         android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="이전 일정"
-                        android:gravity="center"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000" />
                     />
-                    <TextView
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent"
-                        android:layout_weight="2"
-                        android:text=" "
-                        android:gravity="center"
-                        android:textColor="#000000"/>
 
+                    <TextView
+                        android:id="@+id/did_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="#000000" />
+                    <TextView
+                        android:id="@+id/did_site"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="#000000" />
                 </TableRow>
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#FFFFFFFF">
 
                     <TextView
-                        android:layout_height="match_parent"
                         android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="현재 일정"
-                        android:gravity="center"
-                        android:textColor="#000000"/>
-                        />
+                        android:textColor="#000000" />
+                    />
+
                     <TextView
-                        android:layout_height="match_parent"
+                        android:id="@+id/do_time"
                         android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_weight="2"
-                        android:text=" "
                         android:gravity="center"
-                        android:textColor="#000000"/>
+                        android:text=" "
+                        android:textColor="#000000" />
+                    <TextView
+                        android:id="@+id/do_site"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="#000000" />
 
                 </TableRow>
 
                 <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#FFFFFFFF">
-
-                <TextView
-                    android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:text="다음 일정"
-                    android:gravity="center"
-                    android:textColor="#000000"/>
-                />
-                <TextView
                     android:layout_height="match_parent"
-                    android:layout_width="match_parent"
-                    android:layout_weight="2"
-                    android:text=" "
-                    android:gravity="center"
-                    android:textColor="#000000"/>
+                    android:background="#FFFFFFFF">
 
-            </TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="다음 일정"
+                        android:textColor="#000000" />
+                    />
+
+                    <TextView
+                        android:id="@+id/will_do_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="#000000" />
+                    <TextView
+                        android:id="@+id/will_do_site"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textColor="#000000" />
+
+                </TableRow>
             </TableLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="다음일정까지"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/time_to_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="현재 시간"
+                    android:textSize="15dp"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="남음"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
